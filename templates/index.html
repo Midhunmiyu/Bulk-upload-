@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+
+<div class="card " style="text-align:center width: 18rem;">
+
+  <div class="card-body ">
+    <h1 class="card-title" style="text-align:center">Bulk data upload</h1>
+    <h4 class="card-text" style="text-align:center">Quickly Upload your Bulk Amount Of Data Stored In Excelsheet Within A Single Click</h4>
+      <form method="post" enctype="multipart/form-data" style="text-align:center">
+        {% csrf_token %}
+        <input type="file" name="myfile"><br><br>
+        <button type="submit" class="btn btn-primary">Upload</button>
+      </form>
+  </div>
+</div>
+
+</body>
+</html>
